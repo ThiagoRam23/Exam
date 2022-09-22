@@ -1,0 +1,31 @@
+int main()
+{
+    int numero1; int numero2; int numero3; int numero4; int total;int b=0; int t=0;
+	
+    std::cout <<"Ingresa el rango inicial: ";
+	std::cin>>numero1;
+	
+	std::cout <<"Ingresa el rango final: ";
+	std::cin>>numero2;
+	
+	std::cout<<"Ingresa el numero inicial: ";
+	std::cin>>numero3;
+	
+	std::cout<<"Ingresa el numero final: ";
+	std::cin>>numero4;
+	
+    total = (numero2 - numero1 + 1) * (numero4 - numero3 + 1);
+	
+	int array[total];
+	std::cout <<"valor del tamaño de la Array: " <<total;
+	
+	for (int i = numero1; i <= numero2; i++){
+		
+		for (int t1= numero3; t1 <= numero4; t1++){
+			t = i * t1;
+			array [b] = t;
+          std::cout <<"\n" <<i <<" x " <<t1 <<" = " <<array[b];
+			b = b + 1;
+		}
+	}
+}
